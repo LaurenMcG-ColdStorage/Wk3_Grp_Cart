@@ -29,11 +29,11 @@ function listItems(cart){             //Creates listItem function
     };
 };
 
-console.log(removeItem('Frosted Flakes')); //Calls removeItem and console logs the return
-console.log(basket);                       //Logs current basket contents
-
-
 listItems(basket);                         //Calls listItems to verify basket
+
+console.log(removeItem('Frosted Flakes')); //Calls removeItem, attempts to remove Frosted Flakes and console logs the return
+console.log(removeItem('Earrings'))        //Calls removeItem, attempts to remove Earrings and console logs the return
+console.log(basket);                       //Logs current basket contents
 
 function empty(){                          //Creates function empty()
     while (basket.length > 0){             //Loops through entire basket
